@@ -10,7 +10,7 @@ describe(singInBttn(), () => {
     expect(mail).toMatch(/\S+@\S+\.\S+/);
   });
   it('....', () => {
-    const mail = 'juanitamail com';
+    const mail = 'juanitamailcom';
     expect(mail).not.toMatch(/\S+@\S+\.\S+/);
-  });
- 
+  })
+});
