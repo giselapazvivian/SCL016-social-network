@@ -7,7 +7,7 @@ export const feedTemplate = () => {
   div3.id = 'feedContainer';
   const feed = `
   <header class="headerSecondary">
-    <img src="./images/Logo.png" class="logo">
+    <a href="javascript:location.reload()"><img src="./images/Logo.png" class="logo" id="imgLogo"></a>
   </header>
   <div id="page3" class="inputForm">
     <div id="inputDiv">
@@ -21,7 +21,7 @@ export const feedTemplate = () => {
   <footer class="footer2">
       <a class="anclaFooter" href="javascript:location.reload()"><img class="imgFooter" src="../images/home.png"></a>
       <a class="anclaFooter" href="#/Filtrar&Buscar"><img class="imgFooter" src="../images/magnifyingGlass.png"></a>
-      <ul id= "singOutProfile"><img id="userInpt"  src="../images/user.png"></ul>
+      <ul id= "singOutProfile"><img id="userInpt" src="../images/user.png"></ul>
   </footer>
   `;
   div3.innerHTML = feed;

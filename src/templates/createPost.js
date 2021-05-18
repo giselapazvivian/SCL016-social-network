@@ -5,7 +5,7 @@ export const createPostTemplate = () => {
   const div4 = document.createElement('div');
   const createPost = `
     <header class="headerSecondary">
-    <img src="./images/Logo.png" class="logo">
+    <a href="#/Muro"><img src="./images/Logo.png" class="logo"></a>
     </header>
     <div id="createPostPage" class="inputForm">
       <h2 class="title1" >Crea tu post</h2>
@@ -60,7 +60,7 @@ export const createPostTemplate = () => {
         </ul>
       </form>
       <footer class="footer2">
-    <a class="anclaFooter" href="javascript:location.reload()"><img class="imgFooter" src="../images/home.png"></a>
+    <a class="anclaFooter" href="#/Muro"><img class="imgFooter" src="../images/home.png"></a>
     <a class="anclaFooter" href="#/Filtrar&Buscar"><img class="imgFooter" src="../images/magnifyingGlass.png"></a>
     <ul id= "singOutProfile"><img id="userInpt"  src="../images/user.png"></ul>
     </footer>
@@ -68,7 +68,8 @@ export const createPostTemplate = () => {
     
     `;
   div4.innerHTML = createPost;
-  // const storage = firebase.storage();
+  //const storagePost = firebase.storage();
+  
   const uploadImages = () => {
     const uploadImg = document.getElementById('imgPst');
     const file = uploadImg.files[0];
@@ -88,6 +89,7 @@ export const createPostTemplate = () => {
     createPostFireStore.reset();
     changeHash('#/Muro');
   });
+  
 
   // Dando funcionalidad a los botones del footer
   const userInpt = div4.querySelector('#userInpt');

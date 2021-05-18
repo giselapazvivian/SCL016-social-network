@@ -26,9 +26,10 @@ body{
     width: 100%;
 }
     .logo{
-        width:30%;
-        max-width: 200px;
+        margin-left: 30%;
+        width: 35%;
     }
+    
 #page1{
     display: flex;
     flex-flow: nowrap column;
@@ -247,7 +248,7 @@ body{
                 width: 90%;
                 height: 30px;
                 background-image: url("images/yoVoy.png");
-                background-size: 30%;
+                background-size: 35%;
                 background-repeat: no-repeat;
                 background-position: right;
                 text-align: left;
@@ -304,8 +305,6 @@ body{
                 justify-self: center;
             }
 
-
-
 .footer1{
     background-color: #1D7A8C;
     justify-content: space-between;
@@ -352,6 +351,123 @@ body{
                 list-style: none;
                 color: white;
                 border: 1px solid black;
-                position: relative
+                position: relative;
             }
-        
+#searchInput{
+    width: 85%;
+    height: 30px;
+    background-position: right;
+    text-align: center;
+}
+.bttn2 {
+    width: 12%;
+    background-color: white;
+    border: white;
+   }  
+#titleFilter{
+    text-align: center
+}
+#filterByRegion{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 3fr 3fr 3fr 3fr 3fr 3fr 3.5fr 4fr 4fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr;
+}    
+    #imgChile{
+        grid-row-start: 1;
+        grid-row-end: 17;
+    }
+    #r1{
+        grid-column-start: 2;
+        grid-row-start: 1;
+        margin: 0%;
+        align-self: end;
+    }
+    #r2{
+        grid-column-start: 2;
+        grid-row-start: 2;
+        margin: 0%;
+        align-self: center;
+    }
+    #r3{
+        grid-column-start: 2;
+        grid-row-start: 3;
+        margin: 0%;
+        align-self: center;
+    }
+    #r4{
+        grid-column-start: 2;
+        grid-row-start: 4;
+        margin: 0%;
+        align-self: end;
+    }
+    #r5{
+        grid-column-start: 2;
+        grid-row-start: 6;
+        margin: 0%;
+        align-self: center;
+    }
+    #r6{
+        grid-column-start: 2;
+        grid-row-start: 7;
+        margin: 0%;
+        align-self: start;
+    }
+    #r7{
+        grid-column-start: 2;
+        grid-row-start: 7; 
+        margin: 0%;
+        align-self: center;
+    }
+    #r8{
+        grid-column-start: 2;
+        grid-row-start: 7;
+        margin: 0%;
+        align-self: end;
+    }
+    #r9{
+        grid-column-start: 2;
+        grid-row-start: 8;
+        margin: 0%;
+        align-self: start;
+    }
+    #r10{
+        grid-column-start: 2;
+        grid-row-start: 8;
+        margin: 0%;
+        align-self: center;
+    }
+    #r11{
+        grid-column-start: 2;
+        grid-row-start: 8;
+        margin: 0%;
+        align-self: end;
+    }
+    #r12{
+        grid-column-start: 2;
+        grid-row-start: 9;
+        margin: 0%;
+        align-self: start;
+    }
+    #r13{
+        grid-column-start: 2;
+        grid-row-start: 9;
+        margin: 0%;
+        align-self: center;
+    }
+    #r14{
+        grid-column-start: 2;
+        grid-row-start: 10; 
+        margin: 0%;
+        align-self: start;
+    }
+    #r15{
+        grid-column-start: 2;
+        grid-row-start: 11;
+        margin: 0%;
+    }
+    #r16{
+        grid-column-start: 2;
+        grid-row-start: 13;
+        margin: 0%;
+        align-self: end;
+    }

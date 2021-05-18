@@ -21,10 +21,10 @@ export const activeUser = (callback) => {
     }
   });
 };
-// Funcion para desconectarse
+// Función para desconectarse
 export const signOut = () => firebase.auth().signOut();
 
-// Firestore, creando coleccion
+// Firestore, creando colección
 export const savePost = (titlePost, contentPost, classPost, region) => {
   return firebase.firestore().collection('posts').add({
     title: titlePost,
@@ -32,19 +32,22 @@ export const savePost = (titlePost, contentPost, classPost, region) => {
     typePost: classPost,
     regionPost: region,
     date: new Date(),
+    //name: nameProfile,
   });
 };
 
-// Funcion para obtener  nuestros posts ya creados desde firestore
+// Función para obtener nuestros posts ya creados desde firestore
 export const getPost = (callback) => firebase.firestore().collection('posts').onSnapshot(callback);
 
-// Funcion para obtener un post segun el ID entregado
+//Función para obtener imagen
 export const getPostByID = (id) => firebase.firestore().collection('posts').doc(id).get();
+// Función para obtener un post según el ID entregado
+//export const storagePost = (id) => firebase.firestore().collection('').doc(id).get();
 
-// Funcion para borrar posts
+// Función para borrar posts
 export const deletePostFirebase = (id) => firebase.firestore().collection('posts').doc(id).delete();
 
-// Funcion para editar post
+// Función para editar post
 export const editPostFirebase = (id, updatedPost) => {
   const firestore = firebase.firestore();
   return firestore.collection('posts').doc(id).update(updatedPost);
